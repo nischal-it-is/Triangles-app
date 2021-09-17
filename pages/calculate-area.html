@@ -22,15 +22,19 @@
       <form id="calculate-area">
         <label class="input-label" for="first-side">
           <p>Enter first side of a triangle</p>
-          <input class="input-text" required type="number" id="first-side" />
+          <input class="input-text" required type="number" id="first-side"min="0" oninput=" validity.valid|| 
+          (value='');" required />
         </label>
         <label class="input-label" for="second-side">
           <p>Enter second side of a triangle</p>
-          <input class="input-text" required type="number" id="second-side" />
+          <input class="input-text" required type="number" id="second-side" min="0" oninput=" validity.valid|| 
+          (value='');" required />
         </label>
         <label class="input-label" for="third-side">
           <p>Enter third side of a triangle</p>
-          <input class="input-text" required type="number" id="third-side" />
+          <input class="input-text" required type="number" id="third-side" 
+          min="0" oninput=" validity.valid|| 
+      (value='');" required/>
         </label>
         <button class="btn-check" type="submit">Calculate</button>
       </form>
